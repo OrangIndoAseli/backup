@@ -1,0 +1,201 @@
+
+/* styleAbout.css */
+
+/* Mengatur latar belakang dan margin halaman */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mengatur container utama tentang kami */
+.container-about {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Judul halaman */
+.container-about h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Paragraf awal */
+.container-about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+/* Paragraf yang ditampilkan tebal */
+.container-about p b {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Mengatur heading dalam konten */
+.container-about h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+/* Mengatur list bullet */
+.container-about ul {
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Tautan kontak kami */
+.container-about a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.container-about a:hover {
+    text-decoration: underline;
+}
+
+/* Tombol kembali */
+.container-about .btn {
+    margin-top: 2rem;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.container-about .btn:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+/* Mengatur footer */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .container-about {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .container-about h1 {
+        font-size: 2rem;
+    }
+
+    .container-about h2 {
+        font-size: 1.5rem;
+    }
+
+    .container-about p, .container-about ul {
+        font-size: 1rem;
+    }
+
+    .container-about .btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Mengatur footer */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+
+/* Header Text */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Text */
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* List Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Link Styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

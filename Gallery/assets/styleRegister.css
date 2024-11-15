@@ -1,0 +1,66 @@
+/* Background styling for full screen */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Centered card with shadow */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Adjust heading inside card */
+.card h2 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/* Style for input fields */
+.form-control {
+    border-radius: 4px;
+    box-shadow: none;
+    border-color: #ced4da;
+    transition: border-color 0.2s ease-in-out;
+}
+
+/* Change border color on focus */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Button style for Register */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Button hover effect */
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Text link for login */
+.text-center a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Hover effect for login link */
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+/* Message styling */
+.alert {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}

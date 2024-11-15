@@ -1,0 +1,166 @@
+/* Reset and base styling */
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Wrapper for navbar */
+/* Updated Wrapper Style */
+.wrapper {
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+    background-color: #222;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* overflow: hidden; Remove this to avoid clipping */
+}
+
+
+/* Brand/logo styling */
+.brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+    text-transform: capitalize;
+}
+
+.firstname {
+    color: white;
+    font-weight: 700;
+}
+
+.lastname {
+    color: crimson;
+    font-weight: 400;
+    padding-left: 4px;
+}
+
+/* Navbar links styling */
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px; /* Space between links */
+}
+
+.nav-link {
+    color: white;
+    font-size: 1rem;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: crimson;
+}
+
+/* Logout button styling */
+.nav-item {
+    list-style: none;
+}
+
+.nav-item.logout {
+    background-color: red;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.nav-item.logout .nav-link {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+}
+
+.nav-item.logout:hover {
+    background-color: darkred;
+}
+
+/* Profile dropdown menu styling */
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 40px; /* Adjust as needed based on the icon's height */
+    right: 0;
+    background-color: #222;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px 0;
+    width: 150px;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1050; /* Ensures dropdown appears over other elements */
+}
+
+.profile-dropdown li {
+    text-align: left;
+}
+
+.profile-dropdown li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.profile-dropdown li a:hover {
+    background-color: crimson;
+    color: white;
+}
+
+/* Display dropdown when active */
+.nav-item.profile.active .profile-dropdown {
+    display: block;
+}
+
+
+/* Navbar toggle button for mobile view */
+.navbar-toggle {
+    display: none; /* Hide by default */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navigation {
+        display: none; /* Initially hidden on small screens */
+        flex-direction: column;
+        background-color: #222;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 200px;
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0 7px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+}
